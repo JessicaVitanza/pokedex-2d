@@ -33,20 +33,37 @@ fetch(result)
   containerBtns.append(prev, next);
 
   next.addEventListener("click", () => {
+
+    document.querySelector(".one").classList.add("active1");
+    document.querySelector(".two").classList.add("active2");
+    document.querySelector(".three").classList.add("active3");
+
     i++;
       
     result = `https://pokeapi.co/api/v2/pokemon/${i}`;
     fetch(result)
       .then((res) => res.json())
-      .then((res) => displayPokemon(res));
+      .then((res) => {displayPokemon(res)
+        document.querySelector(".one").classList.remove("active1");
+        document.querySelector(".two").classList.remove("active2");
+        document.querySelector(".three").classList.remove("active3");
+      });
   });
 
   prev.addEventListener("click", () => {
+    
+    document.querySelector(".one").classList.add("active1");
+    document.querySelector(".two").classList.add("active2");
+    document.querySelector(".three").classList.add("active3");
+
     i--;
 
     result = `https://pokeapi.co/api/v2/pokemon/${i}`;
     fetch(result)
       .then((res) => res.json())
-      .then((res) => displayPokemon(res));
+      .then((res) => {displayPokemon(res)
+        document.querySelector(".one").classList.remove("active1");
+        document.querySelector(".two").classList.remove("active2");
+        document.querySelector(".three").classList.remove("active3");});
       
   });

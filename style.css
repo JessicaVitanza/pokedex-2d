@@ -63,7 +63,7 @@ body {
     width: 25px;
   }
   .pokedex-lights-sm-light.one {
-    background: #ed3743;
+    background: #e5414c;
     /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #ed3743 0%, #aa0515 100%);
     /* FF3.6-15 */
@@ -72,18 +72,33 @@ body {
     background: radial-gradient(ellipse at center, #ed3743 0%, #aa0515 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
+
+  .active1  {
+    -webkit-box-shadow:0px 0px 25px 14px rgba(255,0,17,0.9);
+    -moz-box-shadow: 0px 0px 25px 14px rgba(255,0,17,0.9);
+    box-shadow: 0px 0px 25px 14px rgba(255,0,17,0.9);
+  }
+
   .pokedex-lights-sm-light.two {
-    background: #dee25a;
+    background: #f6ff00;
     /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #dee25a 0%, #8e993b 100%);
+    background: -moz-radial-gradient(center, ellipse cover, #f6ff00 0%, #8e993b 100%);
     /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #dee25a 0%, #8e993b 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #f6ff00 0%, #8e993b 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #dee25a 0%, #8e993b 100%);
+    background: radial-gradient(ellipse at center, #f6ff00 0%, #8e993b 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
+
+  .active2{
+    -webkit-box-shadow:0px 0px 25px 15px #f6ff00;
+    -moz-box-shadow: 0px 0px 25px 15px #f6ff00;
+    box-shadow: 0px 0px 25px 15px #f6ff00;
+  }
+
+
   .pokedex-lights-sm-light.three {
-    background: #a9f74c;
+    background: #88f800;
     /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #a9f74c 0%, #66a638 100%);
     /* FF3.6-15 */
@@ -92,6 +107,13 @@ body {
     background: radial-gradient(ellipse at center, #a9f74c 0%, #66a638 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
+
+  .active3 {
+    -webkit-box-shadow:0px 0px 25px 15px rgba(136,248,0,0.9);
+    -moz-box-shadow: 0px 0px 25px 15px rgba(136,248,0,0.9);
+    box-shadow: 0px 0px 25px 15px rgba(136,248,0,0.9);
+  }
+
   .pokedex-screen {
     position: relative;
     background: #e3e3e3;
